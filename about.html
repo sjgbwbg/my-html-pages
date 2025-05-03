@@ -1,0 +1,104 @@
+<!-- Header with centered navigation -->
+<header>
+    <div class="logo">GlayMirror</div>
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="music.html">Music</a>
+        <a href="about.html">About</a>
+        <a href="videos.html">Videos</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <div style="flex: 1;"></div> <!-- For symmetry -->
+</header>
+
+<style>
+    header {
+        background-color: #1f1f1f;
+        color: white;
+        padding: 15px 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo {
+        font-size: 1.5rem;
+        font-weight: bold;
+        flex: 1;
+    }
+
+    nav {
+        flex: 2;
+        text-align: center;
+    }
+
+    nav a {
+        color: white;
+        text-decoration: none;
+        margin: 0 15px;
+        font-size: 0.95rem;
+    }
+
+    nav a:hover {
+        text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+        nav a {
+            display: inline-block;
+            margin: 10px 5px;
+        }
+    }
+</style>
+<section class="about-section" id="about">
+    <h2>👤 About</h2>
+    <div class="about-content">
+        <p>
+        Welcome to the official site of GlayMirror — a 16-year-old underground rapper, writer, and lyrical craftsman. Known for his raw emotions, intense wordplay, and fearless delivery, GM represents a new wave of real hip hop coming straight from the soul. Inspired by legends like Kr$na, Raftaar, Eminem and poetic minds like Jaun Elia, GlayMirror doesn’t just rap — he writes truths that cut deep. Every track is built in his home studio, with honesty as the foundation and legacy as the goal. This isn’t just music — it’s a movement.
+        </p>
+        <p>
+            Whether it's a freestyle, a concept EP, or a lyrical journey — we aim to break norms, knock on closed doors, and make our mark. Stick around, stream the music, and be part of the legacy. 🔥
+        </p>
+    </div>
+</section>
+
+<style>
+    .about-section {
+        padding: 60px 20px;
+        background: #1a1a1a;
+        color: white;
+        text-align: center;
+    }
+
+    .about-section h2 {
+        font-size: 2.8rem;
+        margin-bottom: 30px;
+    }
+
+    .about-content {
+        max-width: 800px;
+        margin: 0 auto;
+        text-align: left;
+        background-color: #1f1f1f;
+        padding: 30px;
+        border-radius: 12px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+    }
+
+    .about-content p {
+        font-size: 1rem;
+        line-height: 1.7;
+        color: #ccc;
+        margin-bottom: 20px;
+    }
+
+    @media (max-width: 768px) {
+        .about-content {
+            padding: 20px;
+        }
+
+        .about-section h2 {
+            font-size: 2.2rem;
+        }
+    }
+</style>

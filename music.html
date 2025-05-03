@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Music - GlayMirror</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: white;
+        }
+
+        /* HEADER STYLING (with centered nav) */
+        header {
+            background-color: #1f1f1f;
+            color: white;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            flex: 1;
+        }
+
+        nav {
+            flex: 2;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 0.95rem;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* MUSIC SECTION STYLING */
+        .music-section {
+            padding: 60px 20px;
+            background: #121212;
+            text-align: center;
+        }
+
+        .music-section h2 {
+            font-size: 2.8rem;
+            margin-bottom: 30px;
+        }
+
+        .music-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .music-card {
+            background-color: #1f1f1f;
+            border-radius: 12px;
+            padding: 20px;
+            width: 300px;
+            text-align: left;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+        }
+
+        .music-card img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        .music-card h3 {
+            font-size: 1.5rem;
+            margin: 10px 0;
+            color: white;
+        }
+
+        .music-card p {
+            font-size: 0.95rem;
+            color: #ccc;
+            margin-bottom: 10px;
+        }
+
+        .music-card button {
+            width: 100%;
+            padding: 10px;
+            background-color: #e50914;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        @media (max-width: 768px) {
+            .music-grid {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 10px 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- Header with centered nav -->
+<header>
+    <div class="logo">GlayMirror</div>
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="music.html">Music</a>
+        <a href="#about">About</a>
+        <a href="#videos">Videos</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div style="flex: 1;"></div> <!-- For symmetry -->
+</header>
+
+<!-- Music Section -->
+<section class="music-section" id="music">
+    <h2>🎧 Music</h2>
+    <div class="music-grid">
+
+        <div class="music-card">
+            <img src="https://t2.genius.com/unsafe/344x344/https%3A%2F%2Fimages.genius.com%2Fc39ce924b3bc228ed422727ce91d3e39.512x512x1.jpg" alt="Till i Die Cover">
+            <h3>Till i Die Freestyle</h3>
+            <p>Released: April 2025</p>
+            <button onclick="window.location.href='https://open.spotify.com/track/3049zPVi69R6DQQkKeHWLp?si=4aed89236c61454c'">Stream</button>
+        </div>
+
+        <div class="music-card">
+            <img src="https://t2.genius.com/unsafe/344x344/https%3A%2F%2Fimages.genius.com%2F549cc7f3d7af39480b1dea28e125ec9f.512x512x1.jpg" alt="19 March">
+            <h3>19 March</h3>
+            <p>Released: March 2025</p>
+            <button onclick="window.location.href='https://open.spotify.com/track/1FSGQtxTUn5ZFe1LCyZZFa?si=c647d51576bb4ef5'">Pre-Save</button>
+        </div>
+
+        <div class="music-card">
+            <img src="https://t2.genius.com/unsafe/344x344/https%3A%2F%2Fimages.genius.com%2F72a8cb2f4c3e657f1323cdedc309c90d.512x512x1.jpg" alt="Tu Aayi Nahi">
+            <h3>Tu Aayi Nahi</h3>
+            <p>Released: February 2025</p>
+            <button onclick="window.location.href='https://open.spotify.com/track/0Vhk9TRZ1vCTV13BGRB8Sc?si=27aadbc2367e4595'">Listen</button>
+        </div>
+
+    </div>
+</section>
+
+</body>
+</html>
